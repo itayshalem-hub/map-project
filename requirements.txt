@@ -1,0 +1,23 @@
+# Core UI
+streamlit>=1.45
+streamlit-image-coordinates>=0.1.6
+streamlit-shortcuts>=0.1.9
+# NOTE: intentionally no streamlit-folium — its interactive component has a confirmed
+# remounting bug (iframe stuck at height=0) when first mounted via a programmatic
+# st.rerun(), which is how every page in this app is reached. Maps are instead rendered as
+# a static HTML embed via folium's own _repr_html_ + st.components.v1.html.
+
+# GIS / geospatial
+# NOTE: intentionally no separate `gdal`/osgeo package — rasterio and geopandas ship
+# prebuilt wheels bundling libgdal, so no system GDAL / Homebrew install is required.
+geopandas>=0.14
+rasterio>=1.3
+shapely>=2.0
+folium>=0.16
+
+# General
+numpy
+pillow
+
+# Testing
+pytest
