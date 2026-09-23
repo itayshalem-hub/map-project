@@ -1,5 +1,7 @@
 # GeoAI Historical Aerial Photo → Field Polygons
 
+**Live demo:** https://map-project-snaetqcsredxvm7dy3ccau.streamlit.app/
+
 Streamlit demo: turns a historical (unreferenced) aerial photo into a GeoJSON of approved
 agricultural field polygons via georeferencing → auto-segmentation → keyboard-driven QA
 review → export.
